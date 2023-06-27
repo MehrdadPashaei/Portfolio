@@ -8,23 +8,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-<!--    <link rel="stylesheet" href="./css/font-awesome.css">-->
+    <!--    <link rel="stylesheet" href="./css/font-awesome.css">-->
 </head>
 <body>
 
+<!--Page Loader Start-->
+
+<div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<!--Page Loader End -->
+
+
+<!-- Background Circles Start -->
+
+<div class="bg-circles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+</div>
+
+<!-- Background Circles End -->
+
+<!-- Overlay Start-->
+
+<div class="overlay">
+
+</div>
+
+<!-- Overlay End-->
+
+
 <!--Main Start-->
-<div class="main">
+<div class="main hidden">
+    <!--    Header Start   -->
+
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li><a href="#home" class="nav-item link-item">home</a></li>
+                            <li><a href="#about" class="nav-item link-item">about</a></li>
+                            <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                            <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--    Header End     -->
 
     <!--    Home Section Start-->
-    <section class="home-section align-items-center hidden">
+    <section class="home-section align-items-center" id="home">
         <div class="container">
             <div class="row align-items-center">
                 <div class="home-text">
                     <p>Hello, I'm</p>
                     <h1>Mehrdad Pashaei</h1>
                     <h2>frontend web developer</h2>
-                    <a href="#" class="btn">more about me</a>
-                    <a href="#" class="btn">portfolio</a>
+                    <a href="#about" class="btn link-item">more about me</a>
+                    <a href="#portfolio" class="btn link-item">portfolio</a>
                 </div>
                 <div class="home-img">
                     <div class="img-box">
@@ -38,7 +93,7 @@
 
     <!--    About Section Start -->
 
-    <section class="about-section sec-padding hidden">
+    <section class="about-section sec-padding" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -53,22 +108,19 @@
                 </div>
                 <div class="about-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam, asperiores at
-                        delectus dolore ea id impedit modi necessitatibus nostrum, officia omnis, pariatur quis quisquam
-                        temporibus voluptate voluptatum? Fugit, illum, veniam. A animi, dignissimos distinctio dolor
-                        fugiat modi necessitatibus optio placeat porro sed sint, tempore veniam vero, voluptatem
-                        voluptatum! Alias?
+                        My name is Mehrdad Pashaei, and now that I am writing this, I am turning 32 years old, The path of my life has progressed in such a way that I am now working in the field of programming and Front-End Development with great passion and interest, So Now that you are here, I can share my skills and experiences with you.
                     </p>
                     <h3>skills</h3>
                     <div class="skills">
                         <div class="skills-item">#html</div>
                         <div class="skills-item">#css</div>
-                        <div class="skills-item">#javascript</div>
+                        <div class="skills-item">#javaScript</div>
                         <div class="skills-item">#sass</div>
                         <div class="skills-item">#react</div>
-                        <div class="skills-item">#nodejs</div>
-                        <div class="skills-item">#typescript</div>
+                        <div class="skills-item">#nodeJs</div>
+                        <div class="skills-item">#typeScript</div>
                         <div class="skills-item">#git</div>
+                        <div class="skills-item">#gitHub</div>
                     </div>
                     <div class="about-tabs">
                         <button type="button" class="tab-item active" data-target="#education">education</button>
@@ -79,22 +131,19 @@
                     <div class="tab-content active" id="education">
                         <div class="timeline">
                             <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>bachelor of technology - <span>todfod university</span></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt mollitia ratione
-                                    sapiente voluptatem? Eligendi, illo.</p>
+                                <span class="date">2010 - 2016</span>
+                                <h4>Bachelor of Telecommunication Electrical Engineering - <span>Noor Azad University-Mazandaran</span></h4>
+                                <p>This period was the strangest period of my life and the university itself really did not add anything to me during this period.</p>
                             </div>
                             <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>bachelor of technology - <span>todfod university</span></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ea laboriosam
-                                    maxime tenetur vero voluptate?</p>
+                                <span class="date">2018 - 2021</span>
+                                <h4>Barista professional course - <span>Iranian coffee school</span></h4>
+                                <p>This period of my life can be said to be one of the most attractive periods of my life, because I love coffee, and I was serving my own coffee, and this was very attractive to me.</p>
                             </div>
                             <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>bachelor of technology - <span>todfod university</span></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet harum, itaque libero
-                                    nam vero voluptatibus!</p>
+                                <span class="date">2022 - 2023</span>
+                                <h4>Front end developer - React.Js course - <span>Daneshkar Group</span></h4>
+                                <p>Well, we come to the interesting part of my life, this path of my life is new and my curious mind is so satisfied in this path that I can say that this will be the only path of my professional life for years to come!</p>
                             </div>
                         </div>
 
@@ -105,28 +154,27 @@
                     <div class="tab-content" id="experience">
                         <div class="timeline">
                             <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>web developer - <span>the daneshkar</span></h4>
+                                <span class="date">2023</span>
+                                <h4>Student - <span>the daneshkar</span></h4>
+                                <p>We come to my first experience in programming.
+                                    As you know, I'm still a student in this field, and I've been in the student group for 5 months, I'm taking the ReactJs course and I'm still going strong... My first experience goes back to 3 months ago when I started a portfolio demo for I called Rose's name and I want to say that I did it with the help of one of my friends named Mohsen Tajik.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2023</span>
+                                <h4>Student - <span>the daneshkar</span></h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet mollitia
                                     nobis quidem saepe vitae.</p>
                             </div>
                             <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>web developer - <span>the daneshkar</span></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet mollitia
-                                    nobis quidem saepe vitae.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="date">2013 - 2016</span>
-                                <h4>web developer - <span>the daneshkar</span></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet mollitia
-                                    nobis quidem saepe vitae.</p>
+                                <span class="date">2023</span>
+                                <h4>Student - <span>the daneshkar</span></h4>
+                                <p>My second experience was a group experience where we had to use our skills (Html, Css, JavaScript, Git, GitHub) to divide a template project of an educational site among our group of 3 people, and I was the HomePage part of this project. I had to do a group... our group leader was named Reza Abedi and one of them was a member of the group named Sam Zainali, together we could have a unique experience of teamwork with Git and I learned many tips from the children in this project. I got it.</p>
                             </div>
                         </div>
                     </div>
                     <!--    Experience End     -->
-                    <a href="#" class="btn">download cv</a>
-                    <a href="#" class="btn">contact me</a>
+                    <a href="#about"  class="btn">download cv</a>
+                    <a href="#contact" class="btn link-item">contact me</a>
 
                 </div>
             </div>
@@ -138,7 +186,7 @@
 
 
     <!--    Portfolio Section Start   -->
-    <section class="portfolio-section sec-padding">
+    <section class="portfolio-section sec-padding" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -205,7 +253,10 @@
                     <button type="button" class="btn view-project-btn">view project</button>
                     <div class="portfolio-item-details">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius
+                                exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum
+                                tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi
+                                non quam quis soluta. Est, quia.</p>
                         </div>
                         <div class="general-info">
                             <ul>
@@ -227,7 +278,10 @@
                     <button type="button" class="btn view-project-btn">view project</button>
                     <div class="portfolio-item-details">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius
+                                exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum
+                                tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi
+                                non quam quis soluta. Est, quia.</p>
                         </div>
                         <div class="general-info">
                             <ul>
@@ -249,7 +303,10 @@
                     <button type="button" class="btn view-project-btn">view project</button>
                     <div class="portfolio-item-details">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius
+                                exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum
+                                tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi
+                                non quam quis soluta. Est, quia.</p>
                         </div>
                         <div class="general-info">
                             <ul>
@@ -271,7 +328,10 @@
                     <button type="button" class="btn view-project-btn">view project</button>
                     <div class="portfolio-item-details">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius
+                                exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum
+                                tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi
+                                non quam quis soluta. Est, quia.</p>
                         </div>
                         <div class="general-info">
                             <ul>
@@ -289,10 +349,59 @@
     </section>
     <!--    Portfolio Section End   -->
 
-<!--    Contact Section Start-->
+    <!--    Contact Section Start-->
+    <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" placeholder="Name" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Email" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Subject" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder="Message" class="input-control" required></textarea>
+                            </div>
+                            <div class="submit-button">
+                                <button type="submit" class="btn">send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p>+98 935 *** ****</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>follow me</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<!--    Contact Section End-->
+    <!--    Contact Section End-->
 </div>
 <!--Main End-->
 <!--Portfolio Item Details Popup Start-->
@@ -302,22 +411,22 @@
             <div class="pp-header">
                 <button type="button" class="btn pp-close"><i class="fa fa-times"></i></button>
                 <div class="pp-thumbnail">
-                    <img  src="assets/7.jpg" alt="pp-thumbnail">
+                    <img src="assets/7.jpg" alt="pp-thumbnail">
                 </div>
                 <h3></h3>
             </div>
             <div class="pp-body">
-<!--                <div class="description">-->
-<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>-->
-<!--                </div>-->
-<!--                <div class="general-info">-->
-<!--                    <ul>-->
-<!--                        <li>Created - <span>4 Dec 2020</span></li>-->
-<!--                        <li>Technologies Used - <span>Html, Css, javaScript</span></li>-->
-<!--                        <li>Role - <span>Frontend</span></li>-->
-<!--                        <li>view Online - <span><a href="#" target="_blank">www.domain.com</a></span></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+                <!--                <div class="description">-->
+                <!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cum dicta eius exercitationem laborum laudantium temporibus. Autem cum deleniti explicabo rerum tempore? A accusantium ea, molestias nam quas qui repellat sit? Dignissimos fugit nisi non quam quis soluta. Est, quia.</p>-->
+                <!--                </div>-->
+                <!--                <div class="general-info">-->
+                <!--                    <ul>-->
+                <!--                        <li>Created - <span>4 Dec 2020</span></li>-->
+                <!--                        <li>Technologies Used - <span>Html, Css, javaScript</span></li>-->
+                <!--                        <li>Role - <span>Frontend</span></li>-->
+                <!--                        <li>view Online - <span><a href="#" target="_blank">www.domain.com</a></span></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
