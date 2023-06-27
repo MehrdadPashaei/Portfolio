@@ -1,6 +1,7 @@
 /*------------------
   Fonts
 ------------------*/
+/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*------------------
@@ -377,6 +378,8 @@ button {
 .page-loader.fade-out{
     opacity: 0;
 }
+
+/*noinspection CssOverwrittenProperties*/
 .page-loader div{
     border: 2px solid transparent;
     position: absolute;
